@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+w/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
@@ -87,6 +87,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+  background: #202322;
+}
+
+h1, h2, h3, a, p {
+  color: #e2e3ed;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
  /* ----------------------- Base Header - Footer Styles ------------------*/
 
  header,
@@ -97,26 +109,57 @@ textarea {
    flex-flow: row wrap;
  }
 
+header {
+  padding: 15px 0;
+}
+
  header .content-wrapper {
    display: flex;
    justify-content: center;
    align-items: center;
    flex-flow: row wrap;
+   margin: 0;
  }
+
+.header-divider {
+  color: #3a3a3a;
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 17px 0;
+}
 
  header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
  }
 
  header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
  }
 
-footer .social p {
+footer {
+  flex-direction: column;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,6 +180,7 @@ footer .social-icons {
  }
 
 aside {
+  background: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,11 +201,32 @@ aside {
 
 }
 
+.features h2 {
+  margin-bottom: 63px;
+}
+
+.features article {
+  width: 55%;
+}
+
+.features p {
+  margin: 0;
+}
+
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
+
+.reviews h2 {
+  margin-bottom: 30px;
+}
+
+.reviews h3 {
+  width: 48%;
+  margin: 20px 0;
+ }
 
 /* ============== About Page ============== */
 
@@ -179,6 +244,10 @@ aside {
   flex-flow: row wrap;
 }
 
+.contact-content p {
+  margin: 0;
+}
+
 /* ============== FAQ Page ============== */
 
 .faq {
@@ -188,13 +257,21 @@ aside {
   flex-flow: row wrap;
 }
 
-.faq .faq-content-wrapper {
+.faq-content {
+  margin-bottom: 50px;
+}
+
+.faq .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
 }
 
+.faq h2 {
+  margin-bottom: 50px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
