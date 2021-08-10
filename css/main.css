@@ -378,16 +378,16 @@ aside {
   }
 
   header .content-wrapper {
-    justify-content: centers;
-    width: 50%;
+    justify-content: center;
+    width: 100%;
   }
 
   header nav {
-   width: 50%;
+   width: 100%;
   }
 
   header nav ul {
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   .header-divider {
@@ -422,7 +422,7 @@ aside {
   }
 
   .features .features-item-description {
-    width:;
+    width: 200px;
   }
 
       /* Reviews */
@@ -439,7 +439,7 @@ aside {
       /* Footer */
 
   footer .content-wrapper {
-    width:
+    width: 65%;
     margin: 100px 0;
   }
 
