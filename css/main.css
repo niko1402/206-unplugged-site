@@ -109,9 +109,9 @@ h1, h2, h3, a, p {
    flex-flow: row wrap;
  }
 
-header {
-  padding: 15px 0;
-}
+  header {
+    padding: 15px 0;
+  }
 
  header .content-wrapper {
    display: flex;
@@ -171,6 +171,10 @@ footer .social-icons {
   align-items: center;
 }
 
+footer .copyright {
+  margin: 20px 0;
+}
+
 /* ------------- Mobile styles - Homepage ---------------*/
 
  .hero-area {
@@ -207,7 +211,7 @@ aside {
 
 .features article {
   width: 55%;
-  margin: 30px;
+  margin: 30px 0;
 }
 
 .features p {
@@ -362,7 +366,8 @@ aside {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-    /**** Tablet styles here ****/
+
+    /******** Tablet styles here ********/
 
   .content-wrapper {
     max-width: 640px;
@@ -385,11 +390,11 @@ aside {
   }
 
   header nav {
-   width: 100%;
+   width: 29%;
   }
 
   header nav ul {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .header-divider {
@@ -417,9 +422,9 @@ aside {
 
   .features article {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    flex-basis: auto;
+    flex-basis: 50%;
     flex-flow: column wrap;
   }
 
@@ -470,7 +475,7 @@ aside {
   }
 
   .mission-content p {
-    width: 42%;
+    width: 40%;
   }
 
   .contact-section .content-wrapper h2 {
@@ -499,9 +504,68 @@ aside {
   }
 }
 @media only screen and (min-width: 1200px) {
-    /**** Desktop styles here ****/
-}
 
+    /******** Desktop styles here ********/
+
+  .content-wrapper {
+    max-width: 960px;
+    margin: 100px 0;
+  }
+
+  /*  ==================================================================
+      Homepage
+      ================================================================== */
+
+      /* Hero area */
+
+  .hero-area h1 {
+    width: 57%;
+  }
+
+      /* Aside */
+
+  aside .content-wrapper {
+    justify-content: space-between;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 27%;
+    margin: 0;
+  }
+
+      /* Features */
+
+  .features article {
+    flex-basis:33.33%;
+  }
+
+  .features h2 {
+    width: 74%;
+  }
+      /* Reviews */
+
+  .reviews article div {
+    width: 38%;
+  }
+
+    /*  ===================================================================
+        About Page
+        =================================================================== */
+
+    .mission h2,
+    .contact-section .content-wrapper h2 {
+      width: 90%;
+    }
+
+    /*  ===================================================================
+        FAQ Page
+        =================================================================== */
+
+    .faq h2 {
+      width: 100%;
+    }
+  }
 
 /* ==========================================================================
    Print styles.
