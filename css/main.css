@@ -228,13 +228,18 @@ footer .copyright {
   margin: 20px 0;
 }
 
+.copyright p {
+  font-size: 0.875em;
+  line-height: 16.8px;
+}
+
 /* ------------- Mobile styles - Homepage ---------------*/
 
- .hero-area {
-   display: flex;
-   justify-content: center;
-   flex-flow: row wrap;
- }
+.hero-area {
+ display: flex;
+ justify-content: center;
+ flex-flow: row wrap;
+}
 
 aside {
   background: #527158;
@@ -242,6 +247,32 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .features {
@@ -272,6 +303,7 @@ aside {
 }
 
 .reviews {
+  background: #2a423a;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -430,6 +462,26 @@ aside {
       Homepage
       ================================================================== */
 
+  h2 {
+    font-size: 3em;
+    line-height: 72px;
+  }
+
+  h3 {
+    font-size: 2.25em;
+    line-height: 60px;
+  }
+
+  h4 {
+    font-size: 1.5em;
+    line-height: 39px;
+  }
+
+  p {
+    font-size: 0.875em;
+    line-height: 23px;
+  }
+
     /* Header */
 
   header {
@@ -509,6 +561,11 @@ aside {
     align-items: center;
   }
 
+  .footer-content address {
+    font-size: 0.875em;
+    line-height: 26px;
+  }
+
   footer .contact {
     margin-bottom: 0;
   }
@@ -541,6 +598,11 @@ aside {
     align-items: flex-start;
   }
 
+  .contact-content h4 {
+    font-size: 1.5em;
+    line-height: 28.8px;
+  }
+
   /*  ===================================================================
       FAQ Page
       =================================================================== */
@@ -552,7 +614,7 @@ aside {
     flex-basis: 40%;
   }
 
-  .faq h2 {
+  .faq h3 {
     width: 100%;
   }
 }
@@ -568,10 +630,18 @@ aside {
   /*  ==================================================================
       Homepage
       ================================================================== */
+  ol,ul {
+    font-size: 1.125em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 30px;
+  }
 
       /* Hero area */
 
-  .hero-area h1 {
+  .hero-area h2 {
     width: 57%;
   }
 
@@ -606,19 +676,26 @@ aside {
         About Page
         =================================================================== */
 
-    .mission h2,
-    .contact-section .content-wrapper h2 {
-      width: 90%;
-    }
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    font-size: 3em;
+    width: 90%;
+  }
+
+  .content-wrapper h2 {
+    line-height: 84px;
+  }
 
     /*  ===================================================================
         FAQ Page
         =================================================================== */
 
-    .faq h2 {
-      width: 100%;
-    }
+  .faq h3 {
+    font-size: 3em;
+    line-height: 57.6px;
+    width: 100%;
   }
+}
 
 /* ==========================================================================
    Print styles.
