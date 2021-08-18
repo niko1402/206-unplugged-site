@@ -217,6 +217,13 @@ footer .content-wrapper {
   margin: 50px 0;
 }
 
+footer .social-icons i {
+  color: #527158;
+  font-size: 1.85em;
+  height: 40px;
+  width: 40px;
+}
+
 footer .social-icons p {
   display: flex;
   justify-content: center;
