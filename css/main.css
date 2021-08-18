@@ -101,7 +101,6 @@ body {
 
 ul, ol {
   list-style-type: none;
-  text-transform: uppercase;
   margin: 0;
   padding: 0;
 }
@@ -112,13 +111,13 @@ h1, h2, h3, h4, a, p {
 
 a {
   text-decoration: none;
-  font-size: 1.125em;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
 h3, h4 {
@@ -194,6 +193,7 @@ header nav {
   flex-flow: row wrap;
   font-size: 1.125em;
   font-weight: 700;
+  text-transform: uppercase;
   width: 60%;
  }
 
@@ -286,15 +286,16 @@ aside .form {
 
 input[type=text] {
   box-sizing: border-box;
+  border: 0;
   width: 100%;
   color: #2a423a;
   font-style: italic;
-  padding: 1em;
+  padding: 0.625em;
 }
 
 input[type=button] {
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0;
   margin-top: 20px;
   background-color: #2a423a;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
@@ -369,6 +370,10 @@ input[type=button] {
   background-color: #527158;
 }
 
+.mission h2 {
+  margin: 0;
+}
+
 .map figure {
   width: 100%;
   height: 0;
@@ -420,13 +425,16 @@ input[type=button] {
 }
 
 .faq h2 {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   line-height: 1;
 }
 
 .faq h4 {
   line-height: 1.333;
+  margin: 0;
 }
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -521,7 +529,7 @@ input[type=button] {
 
   .content-wrapper {
     max-width: 640px;
-    margin: 100px 0;
+    margin: 50px 0;
   }
   /*  ==================================================================
       Homepage
@@ -566,6 +574,10 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  header nav li {
+    font-size: 1em;
+  }
+
   .header-divider {
     display: none;
   }
@@ -587,12 +599,16 @@ input[type=button] {
     display:flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    margin: 50px 0;
+    margin: 20px 0 40px 0;
   }
 
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
+  aside .content-wrapper .form-description {
     width: 40%;
+    margin: 0;
+  }
+
+  aside .content-wrapper .form {
+    width: 45%;
     margin: 0;
   }
 
@@ -639,7 +655,7 @@ input[type=button] {
 
   footer .content-wrapper {
     width: 65%;
-    margin: 100px 0;
+    margin: 50px 0;
   }
 
   footer .footer-content {
@@ -683,7 +699,11 @@ input[type=button] {
   }
 
   .mission-content p {
-    width: 40%;
+    width: 45%;
+  }
+
+  .mission .content-wrapper {
+    margin: 50px;
   }
 
   .map figure {
@@ -692,6 +712,10 @@ input[type=button] {
 
   .contact-section .content-wrapper h2 {
     width: 80%;
+  }
+
+  .contact-section .content-wrapper {
+    margin: 50px;
   }
 
   .contact-content {
@@ -712,14 +736,15 @@ input[type=button] {
   }
 
   .faq-content {
-    flex-basis: 40%;
+    flex-basis: 45%;
   }
 
   .faq h2 {
     width: 100%;
   }
 
-  .faq h4, p {
+  .faq h4,
+  .faq p {
     font-size: 0.875em;
     line-height: 1.125;
   }
@@ -758,7 +783,7 @@ input[type=button] {
 
   .hero-area h1 {
     font-size: 3.75em;
-    width: 75%;
+    width: 80%;
   }
 
       /* Aside */
@@ -806,7 +831,7 @@ input[type=button] {
   .mission h2,
   .contact-section .content-wrapper h2 {
     font-size: 3em;
-    width: 90%;
+    width: 96%;
   }
 
   .map figure {
@@ -821,12 +846,13 @@ input[type=button] {
         FAQ Page
         =================================================================== */
 
-  .faq h3 {
+  .faq h2 {
     font-size: 3em;
     width: 100%;
   }
 
-  .faq h4, p {
+  .faq h4,
+  .faq p {
     font-size: 1.125em;
     line-height: 1;
   }
