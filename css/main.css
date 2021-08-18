@@ -96,11 +96,14 @@ html {
 body {
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
+  text-align: left;
 }
 
 ul, ol {
   list-style-type: none;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, a, p {
@@ -122,6 +125,7 @@ h3, h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   font-weight: 500;
+  margin: 20px 0;
 }
 
 p {
@@ -199,6 +203,10 @@ header nav ul {
   width: 100%;
  }
 
+header nav ul li {
+  font-size: 1.125em;
+}
+
 footer {
   flex-direction: column;
   text-align: center;
@@ -217,14 +225,15 @@ footer .content-wrapper {
   margin: 50px 0;
 }
 
-footer .social-icons i {
-  color: #527158;
-  font-size: 1.85em;
-  height: 40px;
-  width: 40px;
+footer .social-icons p i {
+  font-size: 1.3em;
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -541,7 +550,7 @@ input[type=button] {
   }
 
   header figure {
-    width: 35%;
+    width: 29%;
   }
 
   header .content-wrapper {
@@ -597,6 +606,10 @@ input[type=button] {
     flex-flow: column wrap;
   }
 
+  .features i {
+    margin-bottom: 30px;
+  }
+
   .features .features-item-description {
     width: 64%;
   }
@@ -647,6 +660,11 @@ input[type=button] {
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -721,10 +739,6 @@ input[type=button] {
 
   header {
     padding: 15px 0;
-  }
-
-  header figure {
-    width: 25%;
   }
 
   h2 {
