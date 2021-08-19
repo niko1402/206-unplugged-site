@@ -567,7 +567,7 @@ input[type=button] {
   }
 
   header nav {
-   width: 29%;
+   width: 25%;
   }
 
   header nav ul {
@@ -764,6 +764,10 @@ input[type=button] {
 
   header {
     padding: 15px 0;
+  }
+
+  header nav {
+   width: 20%;
   }
 
   h2 {
